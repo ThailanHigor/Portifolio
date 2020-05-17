@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block headerClass %}blog-post-hero{% endblock %}
+{% block bgHeader %}BG_home.jpg{% endblock %}
+{% block headerMessage %}
+<div class="hero-text-wrapper w-container">
+    <h1>How to be a better freelancer this year</h1>
+    <div>
+       <div class="blog-details">John Smith</div>
+       <div class="blog-details">|</div>
+       <div class="blog-details">Startups</div>
+       <div class="blog-details">|</div>
+       <div class="blog-details">Sep 8, 2016</div>
+    </div>
+ </div>
+{% endblock %}
+{% block content %}
+<div class="section top-section">
+    <div class="hero-container w-container">
+       <div class="blog-post-wrapper">
+          <div class="project-text w-richtext">
+             <h3>The best is yet to come</h3>
+             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+             <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+             <h3>More still on its way</h3>
+             <p>The Big Oxmox <a href="http://www.webflow.com/">advised her not to do so</a>, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.</p>
+             <blockquote>"I couldn't imagine doing anything else! I loved the product, and the return on investment was more than my rent." - John Smith</blockquote>
+             <p>The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again. And if she hasn’t been rewritten, then they are still using her.</p>
+             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One</p>
+          </div>
+       </div>
+       <div class="author-wrapper">
+          <img class="author-image" sizes="150px" src="/static/images/hireme.jpg" >
+          <div class="author-name">John Smith</div>
+          <div class="author-bio">John is the founder of MAVO Designs. He enjoys designing websites while taking long walks on the beach.</div>
+       </div>
+    </div>
+ </div>
+ <div class="gray-section section">
+    <div class="w-container">
+       <div class="center">
+          <h2>Recent Blog Posts</h2>
+          <div class="dark-divider small-divider"></div>
+       </div>
+       <div class="w-dyn-list">
+          <div class="w-dyn-items w-row">
+             <div class="blog-block w-col w-col-4 w-dyn-item">
+                <a class="blog-link project-link w-inline-block" href="5-tips-to-being-the-best-designer.html">
+                   <div class="blog-image-wrapper" data-ix="blog-link">
+                      <div class="blog-date">September 8, 2016</div>
+                      <div class="blog-category" style="background-color: #8e54cc;">Web Design</div>
+                      <div class="blog-image" style="background-image: url('/static/uploads/projetos/thumbnails/projeto1-thumbnail.jpg');"></div>
+                   </div>
+                   <div class="blog-title">5 tips to being the best designer</div>
+                   <div class="blog-description">A collection of the best tips to help you become the best designer you can be.</div>
+                   <div>
+                      <div class="blog-author">Written by</div>
+                      <div class="blog-author">John Smith</div>
+                   </div>
+                </a>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+ {% include "/partials/footer_contato.html" %}
+{% endblock %}

@@ -6,6 +6,6 @@ from app import db
 def index():
     return render_template("projetos/index.html")
 
-@projetos.route("/projeto-detalhes", methods=["GET"])
+@projetos.route("/projetos/projeto1", methods=["GET"])
 def detalhes():
     return render_template("projetos/detalhes.html")

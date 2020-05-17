@@ -1,7 +1,12 @@
 {% extends 'base.html' %}
 
+{% block headerClass %}home-page-hero{% endblock %}
 {% block bgHeader %}BG_home.jpg{% endblock %}
-{% block headerMessage %} Magic is something you create. {% endblock %}
+{% block headerMessage %} 
+   <h1 class="home-page-heading" data-ix="hero-text">
+      Magic is something you create.       
+   </h1>
+{% endblock %}
 {% block content %}
  <div class="home-page section top-section">
     <div class="hero-container w-container">
@@ -18,7 +23,7 @@
              <div class="hero-tile w-dyn-list">
                 <div class="w-dyn-items">
                    <div class="w-dyn-item">
-                      <a class="tile-link w-inline-block" href="portfolio.html">
+                      <a class="tile-link w-inline-block" href="/portfolio">
                          <div class="tile-text">Últimos<br>Projetos</div>
                          <div class="tile-image" style="background-image: url('/static/images/ultimosprojetos.jpg');">
                             <div class="tile-overlay"></div>
@@ -33,7 +38,7 @@
                 <div class="w-dyn-list">
                    <div class="w-dyn-items">
                       <div class="w-dyn-item">
-                         <a class="tile-link w-inline-block" href="blog.html">
+                         <a class="tile-link w-inline-block" href="/blog">
                             <div class="tile-text">Meus<br>Posts.</div>
                             <div class="tile-image" style="background-image: url('/static/images/ultimosposts.jpg');">
                                <div class="tile-overlay"></div>

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block headerClass %}blog-hero{% endblock %}
+{% block bgHeader %}BG_home.jpg{% endblock %}
+{% block headerMessage %}
+   <h1>MEU BLOG</h1>
+{% endblock %}
+{% block content %}
+<div class="section">
+    <div class="w-container">
+       <div class="w-dyn-list">
+          <div class="w-dyn-items w-row">
+             <div class="blog-block w-col w-col-4 w-dyn-item">
+                <a class="blog-link project-link w-inline-block" data-ix="blog-link" href="/blog/post1">
+                   <div class="blog-image-wrapper">
+                      <div class="blog-date">September 8, 2016</div>
+                      <div class="blog-category" style="background-color: #8e54cc;">Web Design</div>
+                      <div class="blog-image" style="background-image: url('/static/uploads/projetos/thumbnails/projeto1-thumbnail.jpg');"></div>
+                   </div>
+                   <div class="blog-title">5 tips to being the best designer</div>
+                   <div class="blog-description">A collection of the best tips to help you become the best designer you can be.</div>
+                   <div>
+                      <div class="blog-author">Written by</div>
+                      <div class="blog-author">John Smith</div>
+                   </div>
+                </a>
+             </div>
+             <div class="blog-block w-col w-col-4 w-dyn-item">
+                <a class="blog-link project-link w-inline-block" data-ix="blog-link" href="/blog/post1">
+                   <div class="blog-image-wrapper">
+                      <div class="blog-date">September 8, 2016</div>
+                      <div class="blog-category" style="background-color: #4294d5;">Startups</div>
+                      <div class="blog-image" style="background-image: url('/static/uploads/projetos/thumbnails/projeto1-thumbnail.jpg');"></div>
+                   </div>
+                   <div class="blog-title">How to be a better freelancer this year</div>
+                   <div class="blog-description">Learn the tips and tricks needed to be the best you can be.</div>
+                   <div>
+                      <div class="blog-author">Written by</div>
+                      <div class="blog-author">John Smith</div>
+                   </div>
+                </a>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+ {% include "/partials/footer_contato.html" %}
+{% endblock %}   

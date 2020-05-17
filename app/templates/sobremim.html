@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
-
+{% block headerClass %}about-page{% endblock %}
 {% block bgHeader %}BG_sobremim.jpg{% endblock %}
-{% block headerMessage %} Magic is something you create. {% endblock %}
+
+{% block headerMessage %}
+   <h1>SOBRE MIM</h1>
+{% endblock %}
+
 {% block content %}
 
 <div class="section">
@@ -20,11 +24,5 @@
        </div>
     </div>
  </div>
- <div class="cta-section">
-    <div class="w-container">
-       <div class="cta-heading">Lets Work Together</div>
-       <a class="button w-button" data-ix="show-contact-overlay" href="#">Contact Me</a>
-    </div>
- </div>
-
+ {% include "/partials/footer_contato.html" %}
  {% endblock %}
