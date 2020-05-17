@@ -13,4 +13,10 @@ def create_app(config_name):
     from .controllers.home import home as home_blueprint
     app.register_blueprint(home_blueprint)
 
+    from .controllers.blog import blog as blog_blueprint
+    app.register_blueprint(blog_blueprint)
+
+    from .controllers.projetos import projetos as projetos_blueprint
+    app.register_blueprint(projetos_blueprint)
+    
     return app

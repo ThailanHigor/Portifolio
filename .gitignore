@@ -1,2 +1,8 @@
 
 app/controllers/home/__pycache__/
+
+app/__pycache__/
+
+app/controllers/blog/__pycache__/
+
+app/controllers/projetos/__pycache__/
