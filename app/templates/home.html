@@ -1,11 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello World - Project Base</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block bgHeader %}BG_home.jpg{% endblock %}
+{% block headerMessage %} Magic is something you create. {% endblock %}
+{% block content %}
+ <div class="home-page section top-section">
+    <div class="hero-container w-container">
+       <div class="w-clearfix">
+          <div class="_60block" data-ix="tile-1">
+             <a class="hero-tile w-inline-block" href="/sobre-mim">
+                <div class="tile-text">Sobre<br>Mim.</div>
+                <div class="tile-image" style="background-image: url('/static/images/sobremim.jpg');">
+                   <div class="tile-overlay"></div>
+                </div>
+             </a>
+          </div>
+          <div class="_40block" data-ix="tile-3">
+             <div class="hero-tile w-dyn-list">
+                <div class="w-dyn-items">
+                   <div class="w-dyn-item">
+                      <a class="tile-link w-inline-block" href="portfolio.html">
+                         <div class="tile-text">Últimos<br>Projetos</div>
+                         <div class="tile-image" style="background-image: url('/static/images/ultimosprojetos.jpg');">
+                            <div class="tile-overlay"></div>
+                         </div>
+                      </a>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="_33block" data-ix="tile-3">
+             <div class="hero-tile">
+                <div class="w-dyn-list">
+                   <div class="w-dyn-items">
+                      <div class="w-dyn-item">
+                         <a class="tile-link w-inline-block" href="blog.html">
+                            <div class="tile-text">Meus<br>Posts.</div>
+                            <div class="tile-image" style="background-image: url('/static/images/ultimosposts.jpg');">
+                               <div class="tile-overlay"></div>
+                            </div>
+                         </a>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="_33block" data-ix="tile-2">
+             <a class="hero-tile w-inline-block" data-ix="show-contact-overlay" href="#">
+                <div class="tile-text">Fale<br>Comigo.</div>
+                <div class="hire tile-image" style="background-image: url('/static/images/hireme.jpg');">
+                   <div class="tile-overlay"></div>
+                </div>
+             </a>
+          </div>
+          <div class="_33block" data-ix="tile-4">
+             <div class="w-clearfix">
+                <a class="social-block w-inline-block" href="#"></a>
+                <a class="facebook social-block w-inline-block" href="#"></a>
+                <a class="pinterest social-block w-inline-block" href="#"></a>
+                <a class="dribbble social-block w-inline-block" href="#"></a>
+            </div>
+          </div>
+       </div>
+    </div>
+ </div>
+{% endblock %}
